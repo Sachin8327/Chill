@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     pipe(fd1);  // Parent to Child
     pipe(fd2);  // Child to Parent
 
-    pid_t p = fork();
+    pid_t p = fork();    
 
     if (p > 0)
     {

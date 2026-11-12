@@ -1,0 +1,18 @@
+1. Check USB device history
+sudo journalctl -k | grep -i usb
+
+
+2. Check pendrive insertion events
+sudo journalctl -k | grep -i "new USB device"
+
+
+3. Check pendrive removal events
+sudo journalctl -k | grep -i "USB disconnect"
+
+
+4. Check recent USB events
+sudo dmesg | grep -i usb
+
+
+5. Check history with date and time
+sudo journalctl -k | grep -Ei "usb|disconnect"
