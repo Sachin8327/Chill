@@ -1,3 +1,7 @@
+Clear system journal logs:
+sudo journalctl --rotate
+sudo journalctl --vacuum-time=1s
+
 1. Check USB device history
 sudo journalctl -k | grep -i usb
 
